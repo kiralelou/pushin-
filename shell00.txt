@@ -1,0 +1,25 @@
+Shell 01 :
+ex 01 :
+id -Gn $FT_USER | tr ' ' ',' | tr -d "\n"
+
+
+ex 02 :
+
+find . -type f -name "*.sh" -exec basename {} .sh \;
+
+ex 03 :
+
+find . | wc -1 | sed 's/ //g'
+
+ex 04 :
+
+ifconfig | grep -w ether | cut -d " " -f 2
+
+ex 05 : 
+
+touch 42 > "\?$*'MaRViN'*$?\"
+
+ex 06 : 
+ls -l | awk 'NR%==1'
+
+ex 07 :
