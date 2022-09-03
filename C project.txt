@@ -1,0 +1,27 @@
+C 01 ;
+
+ex 00 :
+	*nbr = 42;
+
+ex 01 :
+ 	*********nbr = 42;
+
+ex 02 :
+ 	void	ft_swap(int *a, int *b)
+{
+	int	tmp;
+
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
+
+
+ex 03 :
+	
+		*div = a / b;
+		*mod = a % b;
+
+ex 04 : 
+
+		
