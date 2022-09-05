@@ -24,4 +24,69 @@ ex 03 :
 
 ex 04 : 
 
-		
+	int	div;
+ 	int	mod;
+
+	div = *a / *b;
+	mod = *a % *b;
+	*a = div;
+	*b = mod;
+ex 05 :
+	
+int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write (1, &str[i], 1);
+		i++;
+	}
+ex 06 :
+	
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return i;
+ex 07 : 
+	void	ft_rev_int_tab(int *tab, int size)
+{
+	int	i;	
+	int	swap;
+
+	i = 0;
+	while (i < (size / 2))
+	{
+		swap = tab[i];
+		tab [i] = tab [size - 1 - i];
+		tab [size - 1 - i] = swap;
+		i++;
+	}
+}
+
+ex 08 :
+
+	void	ft_sort_int_tab(int *tab, int size)
+{
+	int	i;
+	int	swap;
+
+	while (size >= 0)
+	{
+		i = 0;
+		while (i < size - 1)
+		{
+			if (tab[i] > tab[i + 1])
+			{
+				swap = tab [i];
+				tab[i] = tab [i + 1];
+				tab [i + 1] = swap;
+			}
+			i++;
+		}
+		size--;
+	}
+}
